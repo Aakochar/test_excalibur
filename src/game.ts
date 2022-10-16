@@ -1,4 +1,4 @@
-import { Actor, Engine } from 'excalibur';
+import { Engine } from 'excalibur';
 
 const game = new Engine({
   width: 600,
