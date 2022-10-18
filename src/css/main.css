@@ -1,0 +1,17 @@
+:root {
+  --background-color: #283044;
+  /* 78A1BB
+  BFA89E
+  8B786D
+  D8F793 */
+}
+
+body {
+  /* temp solution for centering game window */
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--background-color);
+}

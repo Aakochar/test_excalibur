@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@excaliburjs/dev-tools": "^0.27.1",
     "excalibur": "^0.27.0",
     "typescript": "^4.8.4"
   },
@@ -18,5 +19,10 @@
   },
   "author": "sashalink",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "@parcel/transformer-css": {
+    "cssModules": {
+      "dashedIdents": true
+    }
+  }
 }
