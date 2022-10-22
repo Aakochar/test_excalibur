@@ -1,7 +1,7 @@
-import { Player } from './core/player';
+import { Player } from './core/Player';
 // import { DevTool } from '@excaliburjs/dev-tools';
 
-import { Game } from './core/game';
+import { Game } from './core/Game';
 
 const game = new Game();
 const player = new Player();

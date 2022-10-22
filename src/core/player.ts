@@ -1,10 +1,18 @@
-import { Actor, ImageSource } from 'excalibur';
+import { Actor, ImageSource, Color } from 'excalibur';
 
 const image = new ImageSource('./assets/Sprite_1.png');
 
 export class Player extends Actor {
+  constructor() {
+    super({
+      width: 50,
+      height: 50,
+      color: Color.Red,
+    });
+  }
+
   public onInitialize() {
-    this.graphics.use(image.toSprite());
+    // this.graphics.use(image.toSprite());
   }
 }
 

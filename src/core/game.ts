@@ -1,4 +1,4 @@
-import { Engine } from 'excalibur';
+import { Engine, Resolution } from 'excalibur';
 
 const GAME_WIDTH = 800;
 const GAME_HEIGHT = 600;
@@ -8,6 +8,8 @@ export class Game extends Engine {
     super({
       width: GAME_WIDTH,
       height: GAME_HEIGHT,
+      resolution: Resolution.SNES,
+      snapToPixel: true,
     });
   }
 }
