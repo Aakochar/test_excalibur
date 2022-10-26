@@ -1,13 +1,8 @@
-import { Player } from './core/Player';
 // import { DevTool } from '@excaliburjs/dev-tools';
-
 import { Game } from './core/Game';
 
 const game = new Game();
-const player = new Player();
-
-game.add(player);
-game.start();
+game.initialize();
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 // const devtool = new DevTool(game);

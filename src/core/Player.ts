@@ -1,18 +1,17 @@
-import { Actor, ImageSource, Color } from 'excalibur';
-
-const image = new ImageSource('./assets/Sprite_1.png');
+import { Actor, vec } from 'excalibur';
+import { Resources } from './Resources';
 
 export class Player extends Actor {
   constructor() {
     super({
       width: 50,
       height: 50,
-      color: Color.Red,
+      pos: vec(150, 150),
     });
   }
 
   public onInitialize() {
-    // this.graphics.use(image.toSprite());
+    this.graphics.use(Resources.test.toSprite());
   }
 }
 
