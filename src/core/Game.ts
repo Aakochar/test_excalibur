@@ -5,6 +5,7 @@ import { Resources } from './Resources';
 const GAME_WIDTH = 800;
 const GAME_HEIGHT = 600;
 const IS_SMOOTH = false;
+const SOUND_VOLUME = 0.5;
 
 export class Game extends Engine {
   constructor() {
@@ -25,7 +26,9 @@ export class Game extends Engine {
     this.add(player);
 
     // start loading
-    const loader = new Loader([Resources.test]);
-    this.start(loader);
+    const loader = new Loader([Resources.test, Resources.track]);
+    this.start(loader).then(() => {
+      Resources.track.play(SOUND_VOLUME);
+    });
   }
 }
